@@ -1,0 +1,143 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1">
+  <diagram name="Page-1" id="30mWi2opu2fd8x_zGqkx">
+    <mxGraphModel dx="1797" dy="1700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="E7atYaUVr4yYnSt1svq6-7" edge="1" parent="1" source="E7atYaUVr4yYnSt1svq6-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="E7atYaUVr4yYnSt1svq6-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-1" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=42;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;br&gt;ATMState" vertex="1">
+          <mxGeometry height="170" width="180" x="390" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-3" parent="E7atYaUVr4yYnSt1svq6-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;+insertCard(card): void&lt;/div&gt;&lt;div&gt;+enterPin(pin): void&lt;/div&gt;&lt;div&gt;+selectOption(option): void&lt;/div&gt;&lt;div&gt;+dispenseCash(amount): void&lt;/div&gt;&lt;div&gt;+ejectCard(): void&lt;/div&gt;&lt;div&gt;+getStatus(): ATMStatus&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="128" width="180" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-12" edge="1" parent="1" source="E7atYaUVr4yYnSt1svq6-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="E7atYaUVr4yYnSt1svq6-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-22" edge="1" parent="1" source="E7atYaUVr4yYnSt1svq6-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="E7atYaUVr4yYnSt1svq6-20" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-5" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ATMMAcine" vertex="1">
+          <mxGeometry height="260" width="180" x="110" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-6" parent="E7atYaUVr4yYnSt1svq6-5" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;-atm:ATM&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-state:ATMState&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-atmRepository: ATMRepository&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-currentCard: Card&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+insertCard(card): void&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+enterPin(pin): void&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+selectOption(option): void&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+dispenseCash(amount): void&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ejectCard(): void&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+getStatus(): ATMStatus&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+setState(newState): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="234" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-15" edge="1" parent="1" source="E7atYaUVr4yYnSt1svq6-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="E7atYaUVr4yYnSt1svq6-13" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-10" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ATMRepository" vertex="1">
+          <mxGeometry height="150" width="180" x="-150" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-11" parent="E7atYaUVr4yYnSt1svq6-10" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;-atms: Map&amp;lt;String, ATM&amp;gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+save(atm) : void&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+getById(id): ATM&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+updateATMStatusById(id, newStatus) : void&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="124" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-25" edge="1" parent="1" source="E7atYaUVr4yYnSt1svq6-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="E7atYaUVr4yYnSt1svq6-23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-13" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ATM" vertex="1">
+          <mxGeometry height="150" width="180" x="-150" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-14" parent="E7atYaUVr4yYnSt1svq6-13" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;-id:String&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-status: ATMStatus&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-cashAvailable: double&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-fiveHundredCount: Int&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-oneHundredCount: Int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="124" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-29" edge="1" parent="1" source="E7atYaUVr4yYnSt1svq6-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;dashPattern=8 8;" target="E7atYaUVr4yYnSt1svq6-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-17" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="IdleState" vertex="1">
+          <mxGeometry height="160" width="180" x="210" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-18" parent="E7atYaUVr4yYnSt1svq6-17" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;-atmMachine : ATMMachine&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+insertCard(card): void&lt;/div&gt;&lt;div&gt;+enterPin(pin): void&lt;/div&gt;&lt;div&gt;+selectOption(option): void&lt;/div&gt;&lt;div&gt;+dispenseCash(amount): void&lt;/div&gt;&lt;div&gt;+ejectCard(): void&lt;/div&gt;&lt;div&gt;+getStatus(): ATMStatus&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="134" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-28" edge="1" parent="1" source="E7atYaUVr4yYnSt1svq6-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="E7atYaUVr4yYnSt1svq6-26" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-20" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="card" vertex="1">
+          <mxGeometry height="150" width="180" x="110" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-21" parent="E7atYaUVr4yYnSt1svq6-20" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;-cardNumber : String&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-pin : String&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-account : Account&lt;/div&gt;" vertex="1">
+          <mxGeometry height="124" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-23" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;enum&amp;gt;&amp;gt;&lt;div&gt;ATMStatus&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="180" x="-150" y="-240" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-24" parent="E7atYaUVr4yYnSt1svq6-23" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;IDLE&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;CARD_INSERTED&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;AUTHENTICATED&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;DISPENSE_CASH&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-26" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Account" vertex="1">
+          <mxGeometry height="150" width="180" x="110" y="-230" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-27" parent="E7atYaUVr4yYnSt1svq6-26" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;-accountNumber : String&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-balance: double&lt;/div&gt;" vertex="1">
+          <mxGeometry height="124" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-32" edge="1" parent="1" source="E7atYaUVr4yYnSt1svq6-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;dashPattern=8 8;" target="E7atYaUVr4yYnSt1svq6-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-30" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="CardInsertedState" vertex="1">
+          <mxGeometry height="160" width="180" x="430" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-31" parent="E7atYaUVr4yYnSt1svq6-30" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;div&gt;-atmMachine : ATMMachine&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+insertCard(card): void&lt;/div&gt;&lt;div&gt;+enterPin(pin): void&lt;/div&gt;&lt;div&gt;+selectOption(option): void&lt;/div&gt;&lt;div&gt;+dispenseCash(amount): void&lt;/div&gt;&lt;div&gt;+ejectCard(): void&lt;/div&gt;&lt;div&gt;+getStatus(): ATMStatus&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="134" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-36" edge="1" parent="1" source="E7atYaUVr4yYnSt1svq6-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;dashPattern=8 8;" target="E7atYaUVr4yYnSt1svq6-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="750" y="560" />
+              <mxPoint x="480" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-33" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="AuthenticateState" vertex="1">
+          <mxGeometry height="160" width="180" x="660" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-34" parent="E7atYaUVr4yYnSt1svq6-33" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;div&gt;-atmMachine : ATMMachine&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+insertCard(card): void&lt;/div&gt;&lt;div&gt;+enterPin(pin): void&lt;/div&gt;&lt;div&gt;+selectOption(option): void&lt;/div&gt;&lt;div&gt;+dispenseCash(amount): void&lt;/div&gt;&lt;div&gt;+ejectCard(): void&lt;/div&gt;&lt;div&gt;+getStatus(): ATMStatus&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="134" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-39" edge="1" parent="1" source="E7atYaUVr4yYnSt1svq6-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;dashPattern=8 8;" target="E7atYaUVr4yYnSt1svq6-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="980" y="560" />
+              <mxPoint x="480" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-44" edge="1" parent="1" source="E7atYaUVr4yYnSt1svq6-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="E7atYaUVr4yYnSt1svq6-42" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-37" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="DispenseCashState" vertex="1">
+          <mxGeometry height="160" width="180" x="890" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-38" parent="E7atYaUVr4yYnSt1svq6-37" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;div&gt;-atmMachine : ATMMachine&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+insertCard(card): void&lt;/div&gt;&lt;div&gt;+enterPin(pin): void&lt;/div&gt;&lt;div&gt;+selectOption(option): void&lt;/div&gt;&lt;div&gt;+dispenseCash(amount): void&lt;/div&gt;&lt;div&gt;+ejectCard(): void&lt;/div&gt;&lt;div&gt;+getStatus(): ATMStatus&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="134" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-42" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;div&gt;CashDispenser&lt;/div&gt;" vertex="1">
+          <mxGeometry height="174" width="180" x="1249" y="633" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-43" parent="E7atYaUVr4yYnSt1svq6-42" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;div&gt;+setNextDispenser(&lt;/div&gt;&lt;div&gt;nextCashDispenser&lt;/div&gt;&lt;div&gt;): void&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+canDispense(atm, amount) : boolean&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+dispense(atm, amount) : void&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="134" width="180" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-48" edge="1" parent="1" source="E7atYaUVr4yYnSt1svq6-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;dashPattern=8 8;" target="E7atYaUVr4yYnSt1svq6-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-45" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="FiveHundredDispenser" vertex="1">
+          <mxGeometry height="186" width="180" x="1110" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-46" parent="E7atYaUVr4yYnSt1svq6-45" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;-nextCashDispenser: cashDispenser&lt;/div&gt;&lt;div&gt;+setNextDispenser(&lt;/div&gt;&lt;div&gt;nextCashDispenser&lt;/div&gt;&lt;div&gt;): void&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+canDispense(atm, amount) : boolean&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+dispense(atm, amount) : void&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="180" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-51" edge="1" parent="1" source="E7atYaUVr4yYnSt1svq6-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;dashPattern=8 8;" target="E7atYaUVr4yYnSt1svq6-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-49" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="OneHundredDispenser" vertex="1">
+          <mxGeometry height="180" width="180" x="1380" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="E7atYaUVr4yYnSt1svq6-50" parent="E7atYaUVr4yYnSt1svq6-49" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;div&gt;-nextCashDispenser: cashDispenser&lt;/div&gt;&lt;div&gt;+setNextDispenser(&lt;/div&gt;&lt;div&gt;nextCashDispenser&lt;/div&gt;&lt;div&gt;): void&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+canDispense(atm, amount) : boolean&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+dispense(atm, amount) : void&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="154" width="180" y="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

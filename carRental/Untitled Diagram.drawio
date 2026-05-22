@@ -1,0 +1,64 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="w7_NqyNFtrGDmzM0GhKR">
+    <mxGraphModel dx="934" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5_csRXbkzNmW-o-Ezapf-12" edge="1" parent="1" source="5_csRXbkzNmW-o-Ezapf-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="5_csRXbkzNmW-o-Ezapf-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5_csRXbkzNmW-o-Ezapf-1" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Car" vertex="1">
+          <mxGeometry height="120" width="140" x="270" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="5_csRXbkzNmW-o-Ezapf-4" parent="5_csRXbkzNmW-o-Ezapf-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- carId: String&lt;div&gt;- carName : String&lt;/div&gt;&lt;div&gt;- carType: CarType&lt;/div&gt;&lt;div&gt;- isAvailable : Boolean&lt;/div&gt;" vertex="1">
+          <mxGeometry height="94" width="140" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="5_csRXbkzNmW-o-Ezapf-22" edge="1" parent="1" source="5_csRXbkzNmW-o-Ezapf-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="5_csRXbkzNmW-o-Ezapf-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5_csRXbkzNmW-o-Ezapf-5" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;enum&amp;gt;&amp;gt;&lt;div&gt;CarType&lt;/div&gt;" vertex="1">
+          <mxGeometry height="124" width="140" x="60" y="541" as="geometry" />
+        </mxCell>
+        <mxCell id="5_csRXbkzNmW-o-Ezapf-6" parent="5_csRXbkzNmW-o-Ezapf-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;&amp;nbsp;SEDAN&lt;/div&gt;&lt;div&gt;&amp;nbsp;HATCHBACK&lt;/div&gt;&lt;div&gt;&amp;nbsp;SUV&lt;/div&gt;&lt;div&gt;&amp;nbsp;HYBRID&lt;/div&gt;" vertex="1">
+          <mxGeometry height="94" width="140" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5_csRXbkzNmW-o-Ezapf-25" edge="1" parent="1" source="5_csRXbkzNmW-o-Ezapf-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="5_csRXbkzNmW-o-Ezapf-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5_csRXbkzNmW-o-Ezapf-8" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="User" vertex="1">
+          <mxGeometry height="120" width="140" x="510" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5_csRXbkzNmW-o-Ezapf-9" parent="5_csRXbkzNmW-o-Ezapf-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;- userId: String&lt;/div&gt;&lt;div&gt;- userName: String&lt;/div&gt;&lt;div&gt;- userEmail : String&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="94" width="140" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="5_csRXbkzNmW-o-Ezapf-10" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="CarRepository" vertex="1">
+          <mxGeometry height="150" width="140" x="550" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="5_csRXbkzNmW-o-Ezapf-11" parent="5_csRXbkzNmW-o-Ezapf-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;- cars : Map&amp;lt;String, Car&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ save(Car) : void&lt;/div&gt;&lt;div&gt;+ getCar(Car) : Car&lt;/div&gt;&lt;div&gt;+ getAll() : List&amp;lt;Car&amp;gt;&lt;/div&gt;&lt;div&gt;+ checkAvailable(Car) : Boolean&lt;/div&gt;" vertex="1">
+          <mxGeometry height="124" width="140" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="5_csRXbkzNmW-o-Ezapf-24" edge="1" parent="1" source="5_csRXbkzNmW-o-Ezapf-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="5_csRXbkzNmW-o-Ezapf-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5_csRXbkzNmW-o-Ezapf-15" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Booking" vertex="1">
+          <mxGeometry height="140" width="140" x="270" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="5_csRXbkzNmW-o-Ezapf-18" parent="5_csRXbkzNmW-o-Ezapf-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- bookingId : String&lt;div&gt;- fromDate : Date&lt;div&gt;- toDate: Date&lt;/div&gt;&lt;div&gt;- fromLocation : String&lt;/div&gt;&lt;div&gt;- dropLocation : String&lt;/div&gt;&lt;div&gt;- price : String&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="114" width="140" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="5_csRXbkzNmW-o-Ezapf-21" edge="1" parent="1" source="5_csRXbkzNmW-o-Ezapf-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="5_csRXbkzNmW-o-Ezapf-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5_csRXbkzNmW-o-Ezapf-19" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="BookingRepository" vertex="1">
+          <mxGeometry height="150" width="140" x="270" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5_csRXbkzNmW-o-Ezapf-20" parent="5_csRXbkzNmW-o-Ezapf-19" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;- reservations : Map&amp;lt;String, Booking&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;+ reserve (Booking) : void&lt;div&gt;+ paymentStatus() : void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="124" width="140" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="5_csRXbkzNmW-o-Ezapf-23" edge="1" parent="1" source="5_csRXbkzNmW-o-Ezapf-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.007;entryY=0.435;entryDx=0;entryDy=0;entryPerimeter=0;" target="5_csRXbkzNmW-o-Ezapf-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
