@@ -1,0 +1,70 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="z8-2E--eTPayQqUIuQHh">
+    <mxGraphModel dx="2223" dy="1980" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WCGHaWIypIc0PUDPX5vL-7" edge="1" parent="1" source="WCGHaWIypIc0PUDPX5vL-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="WCGHaWIypIc0PUDPX5vL-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WCGHaWIypIc0PUDPX5vL-1" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Logger" vertex="1">
+          <mxGeometry height="250" width="200" x="380" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="WCGHaWIypIc0PUDPX5vL-4" parent="WCGHaWIypIc0PUDPX5vL-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- loggerInstance&lt;div&gt;- loggerConfig : LoggerConfig&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+setLoggerConfig(LoggerConfig): void&lt;/div&gt;&lt;div&gt;+ log(LogLevel, String Message) : void&lt;/div&gt;&lt;div&gt;+ debug(String Message) : void&lt;/div&gt;&lt;div&gt;+ info(String Message) : void&lt;/div&gt;&lt;div&gt;+ warn(String Message) : void&lt;/div&gt;&lt;div&gt;+ error(String Message) : void&lt;/div&gt;&lt;div&gt;+ fatal( String Mesage) : void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="224" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="WCGHaWIypIc0PUDPX5vL-10" edge="1" parent="1" source="WCGHaWIypIc0PUDPX5vL-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="WCGHaWIypIc0PUDPX5vL-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WCGHaWIypIc0PUDPX5vL-14" edge="1" parent="1" source="WCGHaWIypIc0PUDPX5vL-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="WCGHaWIypIc0PUDPX5vL-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WCGHaWIypIc0PUDPX5vL-5" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="LoggerManager" vertex="1">
+          <mxGeometry height="180" width="210" x="70" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="WCGHaWIypIc0PUDPX5vL-6" parent="WCGHaWIypIc0PUDPX5vL-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;- logLevel : LogLevel&lt;/div&gt;&lt;div&gt;- logAppender : LogAppender&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+setLogLevel(LogLevel) : void&lt;/div&gt;&lt;div&gt;+ getLogAppender() : LogAppender&lt;/div&gt;&lt;div&gt;+ setLogAppender(LogAppender) : void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="154" width="210" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="WCGHaWIypIc0PUDPX5vL-8" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=45;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;enum&amp;gt;&amp;gt;&lt;div&gt;LogLevel&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="210" x="70" y="-55" as="geometry" />
+        </mxCell>
+        <mxCell id="WCGHaWIypIc0PUDPX5vL-9" parent="WCGHaWIypIc0PUDPX5vL-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;INFO&lt;/div&gt;&lt;div&gt;WARN&lt;/div&gt;&lt;div&gt;ERROR&lt;/div&gt;&lt;div&gt;DEBUG&lt;/div&gt;&lt;div&gt;FATAL&lt;/div&gt;" vertex="1">
+          <mxGeometry height="95" width="210" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="WCGHaWIypIc0PUDPX5vL-17" edge="1" parent="1" source="WCGHaWIypIc0PUDPX5vL-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="WCGHaWIypIc0PUDPX5vL-15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WCGHaWIypIc0PUDPX5vL-20" edge="1" parent="1" source="WCGHaWIypIc0PUDPX5vL-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="WCGHaWIypIc0PUDPX5vL-18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WCGHaWIypIc0PUDPX5vL-23" edge="1" parent="1" source="WCGHaWIypIc0PUDPX5vL-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="WCGHaWIypIc0PUDPX5vL-21" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WCGHaWIypIc0PUDPX5vL-12" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=45;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;InterFace&amp;gt;&amp;gt;&lt;div&gt;LogAppender&lt;/div&gt;" vertex="1">
+          <mxGeometry height="149" width="210" x="-220" y="220.5" as="geometry" />
+        </mxCell>
+        <mxCell id="WCGHaWIypIc0PUDPX5vL-13" parent="WCGHaWIypIc0PUDPX5vL-12" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;+ append(LogMessage) : void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="104" width="210" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="WCGHaWIypIc0PUDPX5vL-15" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="LogMessage" vertex="1">
+          <mxGeometry height="180" width="210" x="-510" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="WCGHaWIypIc0PUDPX5vL-16" parent="WCGHaWIypIc0PUDPX5vL-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;- logLevel : LogLevel&lt;/div&gt;&lt;div&gt;- message: String&lt;/div&gt;&lt;div&gt;- timeStamp : Long&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+getLogLevel(LogLevel) : void&lt;/div&gt;&lt;div&gt;+ getMessage() : String&lt;/div&gt;&lt;div&gt;+ getTimeStamp() : Long&lt;/div&gt;" vertex="1">
+          <mxGeometry height="154" width="210" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="WCGHaWIypIc0PUDPX5vL-18" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=45;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ConsoleAppender" vertex="1">
+          <mxGeometry height="149" width="210" x="-390" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="WCGHaWIypIc0PUDPX5vL-19" parent="WCGHaWIypIc0PUDPX5vL-18" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;+ append(LogMessage) : void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="104" width="210" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="WCGHaWIypIc0PUDPX5vL-21" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=45;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;InterFace&amp;gt;&amp;gt;&lt;div&gt;LogAppender&lt;/div&gt;" vertex="1">
+          <mxGeometry height="149" width="210" x="-60" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="WCGHaWIypIc0PUDPX5vL-22" parent="WCGHaWIypIc0PUDPX5vL-21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;+ append(LogMessage) : void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="104" width="210" y="45" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
