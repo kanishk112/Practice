@@ -1,0 +1,120 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="tr21jHzmn-uzowvE5kug">
+    <mxGraphModel dx="1903" dy="633" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-49" edge="1" parent="1" source="vIvNAkPyFJFBWle4mFF7-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="vIvNAkPyFJFBWle4mFF7-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-1" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="User" vertex="1">
+          <mxGeometry height="52" width="140" x="730" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-4" parent="vIvNAkPyFJFBWle4mFF7-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="-&amp;nbsp; name : String&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="26" width="140" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-24" edge="1" parent="1" source="vIvNAkPyFJFBWle4mFF7-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="vIvNAkPyFJFBWle4mFF7-22" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-43" edge="1" parent="1" source="vIvNAkPyFJFBWle4mFF7-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="vIvNAkPyFJFBWle4mFF7-41" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-48" edge="1" parent="1" source="vIvNAkPyFJFBWle4mFF7-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="vIvNAkPyFJFBWle4mFF7-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-5" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Match" vertex="1">
+          <mxGeometry height="140" width="130" x="60" y="366" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-6" parent="vIvNAkPyFJFBWle4mFF7-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;- matchId : UUID&lt;/div&gt;&lt;div&gt;- teamA : String&lt;/div&gt;&lt;div&gt;- teamB : String&lt;/div&gt;&lt;div&gt;- venue : String&lt;/div&gt;&lt;div&gt;- startTime : String&lt;/div&gt;&lt;div&gt;- matchStatus : Status&lt;/div&gt;&lt;div&gt;- matchType : Type&lt;/div&gt;" vertex="1">
+          <mxGeometry height="114" width="130" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-14" edge="1" parent="1" source="vIvNAkPyFJFBWle4mFF7-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="vIvNAkPyFJFBWle4mFF7-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-21" edge="1" parent="1" source="vIvNAkPyFJFBWle4mFF7-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="vIvNAkPyFJFBWle4mFF7-19" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-8" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="LiveMatchOrchestrator" vertex="1">
+          <mxGeometry height="140" width="140" x="490" y="366" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-9" parent="vIvNAkPyFJFBWle4mFF7-8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&amp;nbsp;+ getMatchUpdates() : Match&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="114" width="140" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-15" edge="1" parent="1" source="vIvNAkPyFJFBWle4mFF7-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="vIvNAkPyFJFBWle4mFF7-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-18" edge="1" parent="1" source="vIvNAkPyFJFBWle4mFF7-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="vIvNAkPyFJFBWle4mFF7-16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-12" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="MatchService" vertex="1">
+          <mxGeometry height="140" width="140" x="270" y="366" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-13" parent="vIvNAkPyFJFBWle4mFF7-12" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ getMatchDetails() : Match" vertex="1">
+          <mxGeometry height="114" width="140" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-30" edge="1" parent="1" source="vIvNAkPyFJFBWle4mFF7-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="vIvNAkPyFJFBWle4mFF7-28" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-16" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ScoringService" vertex="1">
+          <mxGeometry height="140" width="140" x="270" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-17" parent="vIvNAkPyFJFBWle4mFF7-16" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ getScoreCard() : ScoreCard&lt;br&gt;+ getOverDetails() : Over" vertex="1">
+          <mxGeometry height="114" width="140" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-19" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="CommentatoryService" vertex="1">
+          <mxGeometry height="136" width="150" x="485" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-20" parent="vIvNAkPyFJFBWle4mFF7-19" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;+ commentatoryLanguage() : void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="150" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-22" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Status" vertex="1">
+          <mxGeometry height="140" width="130" x="160" y="586" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-23" parent="vIvNAkPyFJFBWle4mFF7-22" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="COMPLETED&lt;div&gt;WON_BY _A&lt;/div&gt;&lt;div&gt;WON_BY_B&lt;/div&gt;&lt;div&gt;DRAW&lt;/div&gt;&lt;div&gt;ABANDONED&lt;/div&gt;&lt;div&gt;DELAY&lt;/div&gt;" vertex="1">
+          <mxGeometry height="114" width="130" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-39" edge="1" parent="1" source="vIvNAkPyFJFBWle4mFF7-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="vIvNAkPyFJFBWle4mFF7-36">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="10" y="216" />
+              <mxPoint x="10" y="216" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-28" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ScoreCard" vertex="1">
+          <mxGeometry height="140" width="140" x="50" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-29" parent="vIvNAkPyFJFBWle4mFF7-28" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- runsScore : Int&lt;div&gt;- strikerate : Double&lt;/div&gt;&lt;div&gt;- over : Over&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- getBowlingFigures() : Overl&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="114" width="140" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-31" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Ball" vertex="1">
+          <mxGeometry height="140" width="140" x="-380" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-32" parent="vIvNAkPyFJFBWle4mFF7-31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;- ballNumber : Double&lt;/div&gt;&lt;div&gt;- bowledBy : String&lt;/div&gt;&lt;div&gt;- facedBy : String&lt;/div&gt;&lt;div&gt;- runScored : Int&lt;/div&gt;&lt;div&gt;- extras : Int&lt;/div&gt;&lt;div&gt;- wicket : Int&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="114" width="140" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-40" edge="1" parent="1" source="vIvNAkPyFJFBWle4mFF7-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="vIvNAkPyFJFBWle4mFF7-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-36" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Over" vertex="1">
+          <mxGeometry height="140" width="140" x="-160" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-37" parent="vIvNAkPyFJFBWle4mFF7-36" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;- overNumber : Int&lt;/div&gt;&lt;div&gt;- ballBowled : List&amp;lt;Ball&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="114" width="140" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-41" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Inings" vertex="1">
+          <mxGeometry height="140" width="130" x="-150" y="366" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-42" parent="vIvNAkPyFJFBWle4mFF7-41" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;- inningId: UUID&lt;/div&gt;&lt;div&gt;- battingTeam : String&lt;/div&gt;&lt;div&gt;- bowlingTeam : String&lt;/div&gt;&lt;div&gt;- totalRuns : Double&lt;/div&gt;&lt;div&gt;- totalWikets : Int&lt;/div&gt;" vertex="1">
+          <mxGeometry height="114" width="130" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-45" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Type" vertex="1">
+          <mxGeometry height="140" width="130" x="-50" y="586" as="geometry" />
+        </mxCell>
+        <mxCell id="vIvNAkPyFJFBWle4mFF7-46" parent="vIvNAkPyFJFBWle4mFF7-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="T20&lt;div&gt;ODI&lt;/div&gt;&lt;div&gt;TEST&lt;/div&gt;&lt;div&gt;PREMIER_LEAGUE&lt;/div&gt;&lt;div&gt;DOMESTIC&lt;/div&gt;" vertex="1">
+          <mxGeometry height="114" width="130" y="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
