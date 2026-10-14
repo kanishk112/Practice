@@ -1,6 +1,8 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.LinkedList;
 import java.util.Set;
 import enums.IssueType;
 import java.util.List;
@@ -12,10 +14,10 @@ public class Agent {
     private String email;
     private Set<IssueType> expertiseAreas;
 
-    private Queue<String> waitList;
+    private Queue<String> waitList = new LinkedList<>();
     private List<String> assignedIssues;
     private String assignedIssueId;
-    private List<String> history;
+    private List<String> history = new ArrayList<>();
 
     public Agent(String id, String name, String email, Set<IssueType> expertiseAreas) {
         this.id = id;

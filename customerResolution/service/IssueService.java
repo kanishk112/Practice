@@ -14,7 +14,13 @@ public class IssueService {
     private IssueRepository issueRepository;
     private AgentRepository agentRepository;
 
-    public Issue createIssue(String id, String transactionId, IssueType issueType, String subject, String description, String email) {
+    public IssueService(IssueRepository issueRepository, AgentRepository agentRepository) {
+        this.issueRepository = issueRepository;
+        this.agentRepository = agentRepository;
+    }
+
+    public Issue createIssue(String id, String transactionId, IssueType issueType, String subject, String description,
+            String email) {
         Issue issue = new Issue(id, transactionId, issueType, subject, description, email);
         issueRepository.save(issue);
         System.out.println(">>> Issue " + issue.getId() + " created against transaction \"" + transactionId + "\"");
@@ -26,7 +32,8 @@ public class IssueService {
             if (filter.containsKey("email") && !issue.getEmail().equalsIgnoreCase(filter.get("email"))) {
                 return false;
             }
-            if (filter.containsKey("type") && !issue.getIssueType().name().equalsIgnoreCase(filter.get("type").replace(" ", "_"))) {
+            if (filter.containsKey("type")
+                    && !issue.getIssueType().name().equalsIgnoreCase(filter.get("type").replace(" ", "_"))) {
                 return false;
             }
             if (filter.containsKey("status") && !issue.getStatus().name().equalsIgnoreCase(filter.get("status"))) {
@@ -38,7 +45,8 @@ public class IssueService {
 
     public void updateIssue(String issueId, IssueStatus status, String resolution) {
         Issue issue = issueRepository.getById(issueId);
-        if (issue == null) throw new IllegalArgumentException("Issue not found");
+        if (issue == null)
+            throw new IllegalArgumentException("Issue not found");
         issue.setStatus(status);
         issue.setResolution(resolution);
         System.out.println(">>> " + issueId + " status updated to " + issue.getStatus());
@@ -46,7 +54,8 @@ public class IssueService {
 
     public void resolveIssue(String issueId, String resolution) {
         Issue issue = issueRepository.getById(issueId);
-        if (issue == null) throw new IllegalArgumentException("Issue not found");
+        if (issue == null)
+            throw new IllegalArgumentException("Issue not found");
 
         issue.setStatus(IssueStatus.RESOLVED);
         issue.setResolution(resolution);
@@ -56,6 +65,12 @@ public class IssueService {
             if (agent != null) {
                 agent.getHistory().add(issue.getId());
                 agent.setAssignedIssueId(null);
+
+                // Automatically assign next issue from waitlist
+                if (!agent.getWaitList().isEmpty()) {
+                    String nextIssueId = agent.getWaitList().poll();
+                    // call assignment service to assign this specific issue to this agent
+                }
             }
         }
 
