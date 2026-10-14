@@ -3,11 +3,10 @@ package repository;
 import model.Issue;
 
 import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class IssueRepository {
-    private final Map<String, Issue> issues = new HashMap<>();
+    private final ConcurrentHashMap<String, Issue> issues = new ConcurrentHashMap<>();
 
     public void save(Issue issue) {
         issues.put(issue.getId(), issue);

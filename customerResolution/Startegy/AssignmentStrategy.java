@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface AssignmentStrategy {
     Agent assign(List<Agent> agents, Issue issue);
+
+    Agent findAgentForWaitlist(List<Agent> agents, Issue issue);
 }

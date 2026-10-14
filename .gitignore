@@ -1,0 +1,12 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.bkp
+
+# Compiled Java class files
+*.class
+
+# Build and output directories
+out/
+build/
+bin/
