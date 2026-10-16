@@ -1,0 +1,114 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="enemGc2_bsu18bqTHFo6">
+    <mxGraphModel dx="2904" dy="1235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="light-dark(#ffffff, #121212)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-1" edge="1" parent="1" source="PiATyGNkNLh2cqHM4fOY-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="PiATyGNkNLh2cqHM4fOY-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-2" edge="1" parent="1" source="PiATyGNkNLh2cqHM4fOY-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="PiATyGNkNLh2cqHM4fOY-26" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-46" edge="1" parent="1" source="PiATyGNkNLh2cqHM4fOY-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="PiATyGNkNLh2cqHM4fOY-44" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-35" y="680" />
+              <mxPoint x="-295" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-3" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Notification" vertex="1">
+          <mxGeometry height="160" width="170" x="-120" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-4" parent="PiATyGNkNLh2cqHM4fOY-3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;- String notificationId;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- String title;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;- Template t;&lt;/div&gt;&lt;div&gt;&amp;nbsp;- ChannelMedium channelMedium;&lt;/div&gt;&lt;div&gt;&amp;nbsp;- Status s;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="134" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-38" edge="1" parent="1" source="PiATyGNkNLh2cqHM4fOY-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="PiATyGNkNLh2cqHM4fOY-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-6" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Client" vertex="1">
+          <mxGeometry height="160" width="170" x="-380" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-7" parent="PiATyGNkNLh2cqHM4fOY-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;- String clientId;&lt;/div&gt;&lt;div&gt;- String clientName;&lt;/div&gt;&lt;div&gt;- String email;&lt;/div&gt;&lt;div&gt;- String description;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="134" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-8" edge="1" parent="1" source="PiATyGNkNLh2cqHM4fOY-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="PiATyGNkNLh2cqHM4fOY-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-9" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Template" vertex="1">
+          <mxGeometry height="160" width="170" x="-120" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-10" parent="PiATyGNkNLh2cqHM4fOY-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;- String templateId;&lt;/div&gt;&lt;div&gt;&amp;nbsp;- Notification notification;&lt;/div&gt;&lt;div&gt;&amp;nbsp;- Notification destinationNotification;&lt;/div&gt;&lt;div&gt;&amp;nbsp;- ChannelMedium c;&lt;/div&gt;&lt;div&gt;&amp;nbsp;- LocalDateTime timeStamp;&lt;/div&gt;&lt;div&gt;&amp;nbsp;- Type ty;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="134" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-11" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;enum&amp;gt;&amp;gt; Type" vertex="1">
+          <mxGeometry height="160" width="170" x="210" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-12" parent="PiATyGNkNLh2cqHM4fOY-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;REGULAR,&lt;/div&gt;&lt;div&gt;FESTIVE,&lt;/div&gt;&lt;div&gt;FLASH-SALE,&lt;/div&gt;&lt;div&gt;GREETINGS&lt;/div&gt;" vertex="1">
+          <mxGeometry height="134" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-13" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="NotificationEventListener" vertex="1">
+          <mxGeometry height="160" width="200" x="480" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-14" parent="PiATyGNkNLh2cqHM4fOY-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;onNotificationScheduled(Notification n): void&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;onNotificationCancelled(Notification n): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="134" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-18" edge="1" parent="1" source="PiATyGNkNLh2cqHM4fOY-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="PiATyGNkNLh2cqHM4fOY-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-20" edge="1" parent="1" source="PiATyGNkNLh2cqHM4fOY-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="PiATyGNkNLh2cqHM4fOY-33" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-21" edge="1" parent="1" source="PiATyGNkNLh2cqHM4fOY-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="PiATyGNkNLh2cqHM4fOY-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-40" edge="1" parent="1" source="PiATyGNkNLh2cqHM4fOY-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="PiATyGNkNLh2cqHM4fOY-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-22" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="NotificationService" vertex="1">
+          <mxGeometry height="200" width="300" x="200" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-23" parent="PiATyGNkNLh2cqHM4fOY-22" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;- clientRepo : ClientRepository&lt;/div&gt;&lt;div&gt;- notificationRepo : notificationRepository&lt;/div&gt;&lt;div&gt;- listeners : List&amp;lt;NotificationEventListener&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ addNotificationEventListener(NotificationEventListener n) : void&lt;/div&gt;&lt;div&gt;+ searchAvailable NotificationTemplates (Notification n, ChannelMedium c) : List&amp;lt;Templates&amp;gt;&lt;/div&gt;&lt;div&gt;+ cancelNotifications(UUID notificationId): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="174" width="300" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-41" edge="1" parent="1" source="PiATyGNkNLh2cqHM4fOY-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="PiATyGNkNLh2cqHM4fOY-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-24" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ClientRepository" vertex="1">
+          <mxGeometry height="160" width="170" x="-130" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-25" parent="PiATyGNkNLh2cqHM4fOY-24" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ listAllClients() : List&amp;lt;Client&amp;gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ save(Client client) : void&lt;/div&gt;&lt;div&gt;+ findById(String clientId) : User&lt;/div&gt;" vertex="1">
+          <mxGeometry height="134" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-26" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;enum&amp;gt;&amp;gt;ChanelMediums" vertex="1">
+          <mxGeometry height="160" width="170" x="-380" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-27" parent="PiATyGNkNLh2cqHM4fOY-26" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;- SMS&lt;/div&gt;&lt;div&gt;- IN-APP&lt;/div&gt;&lt;div&gt;- PUSH&lt;/div&gt;&lt;div&gt;- EMAIL&lt;/div&gt;" vertex="1">
+          <mxGeometry height="134" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-42" edge="1" parent="1" source="PiATyGNkNLh2cqHM4fOY-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="PiATyGNkNLh2cqHM4fOY-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-33" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="NoticficationRepository" vertex="1">
+          <mxGeometry height="160" width="170" x="210" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-34" parent="PiATyGNkNLh2cqHM4fOY-33" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ getNotification(from, to) : Notification&lt;div&gt;+&amp;nbsp;save(Notification n) : void&lt;/div&gt;&lt;div&gt;+ findById(String notificationId): Notification&lt;/div&gt;" vertex="1">
+          <mxGeometry height="134" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-36" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="NotificationHandler" vertex="1">
+          <mxGeometry height="160" width="170" x="680" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-37" parent="PiATyGNkNLh2cqHM4fOY-36" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;+ dispatchNotification(Client c, Notificatio n, ChannelMedium c, Template t) : void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="134" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-44" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;enum&amp;gt;&amp;gt; Status" vertex="1">
+          <mxGeometry height="160" width="170" x="-380" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="PiATyGNkNLh2cqHM4fOY-45" parent="PiATyGNkNLh2cqHM4fOY-44" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;- DELIVERED&lt;/div&gt;&lt;div&gt;- CANCELLED&lt;/div&gt;&lt;div&gt;- IN_PROGRESS&lt;/div&gt;&lt;div&gt;- ERROR&lt;/div&gt;&lt;div&gt;- SCHEDULED&lt;/div&gt;" vertex="1">
+          <mxGeometry height="134" width="170" y="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
