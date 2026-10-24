@@ -1,0 +1,82 @@
+<mxfile host="65bd71144e">
+    <diagram id="LBdCgQjAzEIhB6ITy8c3" name="Page-1">
+        <mxGraphModel dx="1618" dy="2012" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;&lt;Interface&gt;&gt;&#10;Connection" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="360" width="240" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="+ executeQuery(sql : String) : String&#10;+ isValid() : boolean&#10;+ close() : void" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="2">
+                    <mxGeometry y="60" width="240" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;h3 class=&quot;PDq2pG_selectionAnchorContainer&quot; data-end=&quot;505&quot; data-start=&quot;478&quot; dir=&quot;auto&quot; data-section-id=&quot;1yhf4f9&quot;&gt;Functional requirements&lt;span class=&quot;PDq2pG_selectionAnchor&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;/h3&gt;&lt;ol data-end=&quot;930&quot; data-start=&quot;506&quot;&gt;&lt;li data-end=&quot;560&quot; data-start=&quot;506&quot; data-section-id=&quot;9levme&quot;&gt;Create and maintain a pool of database connections.&lt;/li&gt;&lt;li data-end=&quot;615&quot; data-start=&quot;561&quot; data-section-id=&quot;fjmte6&quot;&gt;Allow clients to borrow a connection from the pool.&lt;br&gt;&lt;/li&gt;&lt;li data-end=&quot;660&quot; data-start=&quot;616&quot; data-section-id=&quot;g0fakg&quot;&gt;Return connections to the pool after use.&lt;br&gt;&lt;/li&gt;&lt;li data-end=&quot;693&quot; data-start=&quot;661&quot; data-section-id=&quot;1q3nxw8&quot;&gt;Maintain a maximum pool size.&lt;br&gt;&lt;/li&gt;&lt;li data-end=&quot;749&quot; data-start=&quot;694&quot; data-section-id=&quot;abrscs&quot;&gt;Validate connections before handing them to clients.&lt;br&gt;&lt;/li&gt;&lt;li data-end=&quot;845&quot; data-start=&quot;750&quot; data-section-id=&quot;wrj0fx&quot;&gt;Track metrics such as active connections, idle connections, and connection acquisition time.&lt;br&gt;&lt;/li&gt;&lt;li data-end=&quot;930&quot; data-start=&quot;846&quot; data-section-id=&quot;okxjux&quot;&gt;Support connection reuse rather than creating a new connection for every request.&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;&lt;h3 data-end=&quot;963&quot; data-start=&quot;932&quot; dir=&quot;auto&quot; data-section-id=&quot;46l2g7&quot;&gt;Non-functional requirements&lt;/h3&gt;&lt;ul data-end=&quot;1119&quot; data-start=&quot;964&quot;&gt;&lt;li data-end=&quot;997&quot; data-start=&quot;964&quot; data-section-id=&quot;at2h2m&quot;&gt;Thread-safe access to the pool.&lt;br&gt;&lt;/li&gt;&lt;li data-end=&quot;1045&quot; data-start=&quot;998&quot; data-section-id=&quot;csysea&quot;&gt;Efficient connection acquisition and release.&lt;br&gt;&lt;/li&gt;&lt;li data-end=&quot;1071&quot; data-start=&quot;1046&quot; data-section-id=&quot;1e6set6&quot;&gt;Bounded resource usage.&lt;br&gt;&lt;/li&gt;&lt;li data-end=&quot;1119&quot; data-start=&quot;1072&quot; data-section-id=&quot;2ut12j&quot;&gt;Extensible design for validation and metrics.&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="-300" y="-260" width="550" height="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="ThreadSafeConnectionPool" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="80" width="260" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="- idleQueue : BlockingQueue&lt;Connection&gt;&#10;- totalConnection : AtomicInteger&#10;- maxPoolSize : int&#10;- stats : Stats&#10;&#10;+ acquire(timeoutMs : Long) : Connection&#10;+ release(conn : Connection) : void&#10;+ shutDown() : void" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="5">
+                    <mxGeometry y="60" width="260" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="6" target="2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=none;html=1;dashed=1;dashPattern=1 1;" edge="1" parent="1" source="8" target="2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="BasicConnection" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="-70" y="590" width="240" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="- connectionId : String&#10;&#10;+ executeQuery(sql : String) : String&#10;+ isValid() : boolean&#10;+ close() : void" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="8">
+                    <mxGeometry y="30" width="240" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" style="edgeStyle=none;html=1;dashed=1;dashPattern=1 1;" edge="1" parent="1" source="10" target="2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="AbstractConnectionDecorator" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="590" width="240" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="#delegate : Connection&#10;&#10;+ AbstractConnectionDecorator(delegate)&#10;+ executeQuery(sql : String) : String&#10;+ isValid() : boolean&#10;+ close() : void" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="10">
+                    <mxGeometry y="30" width="240" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=none;html=1;dashed=1;" edge="1" parent="1" source="12" target="10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="MetricsDecorator" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="830" width="240" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="- stats : Stats&#10;&#10;+ executeQuery(sql : String) : String&#10;+ isValid() : boolean&#10;+ close() : void" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="12">
+                    <mxGeometry y="30" width="240" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" style="edgeStyle=none;html=1;dashed=1;" edge="1" parent="1" source="14" target="10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="QueryRetryDecorator" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="480" y="830" width="240" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="- maxRetries : int&#10;&#10;+ executeQuery(sql : String) : String&#10;+ isValid() : boolean&#10;+ close() : void" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="14">
+                    <mxGeometry y="30" width="240" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Stats" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="1070" width="240" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="- activeConnections: LongAdder&#10;- idleConnection : LongAdder&#10;- acquisationTime : LongAdder&#10;- validationFailures : LongAdder" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="16">
+                    <mxGeometry y="40" width="240" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="13" target="16">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" style="edgeStyle=none;html=1;dashed=1;" edge="1" parent="1" source="24" target="10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="PoolConnectionDecorator" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="800" y="830" width="240" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="- pool: ThreadSafeConnectionPool&#10;&#10;+ executeQuery(sql : String) : String&#10;+ isValid() : boolean&#10;+ close() : void" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="24">
+                    <mxGeometry y="30" width="240" height="100" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
