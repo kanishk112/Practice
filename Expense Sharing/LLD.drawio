@@ -1,0 +1,145 @@
+<mxfile host="65bd71144e">
+    <diagram id="HllRODC5qGoueO2fOBRn" name="Page-1">
+        <mxGraphModel dx="1487" dy="1144" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="4" value="Functional Requirements :&lt;br&gt;1. User should be able to add, update, delete and view and expense.(CRUD)&lt;br&gt;2. User should be able to do above CRUD expense functions with a friend or a group and divide them on basis of differet strategies like Percentage, exact, equal.&lt;br&gt;3. User should be able to do the payment and record the payment where the expense can be paid by a single user or ny multiple users.&lt;br&gt;4. User should be able to see current how my much they owe and they are owed along wth previous transactions or settled up in their history.&lt;br&gt;5. User should be able to get notify for every CRUD operations.&lt;br&gt;&lt;br&gt;&lt;br&gt;Non - FRs :&lt;br&gt;1. User can get notification from differernt mediums like : Email, SMS, Push etc.&lt;br&gt;2. Correctness or money calculations&lt;br&gt;3. Transactions should be concurrent.&lt;br&gt;4. Debt simplification.&lt;br&gt;&lt;br&gt;Entities and relationships :&lt;br&gt;1. user&lt;br&gt;2. groups&lt;br&gt;3. expense&lt;br&gt;4. expense manager&lt;br&gt;5. SplitStrategy&lt;br&gt;6. payment&lt;br&gt;7. notification&lt;br&gt;8. Split&lt;br&gt;9. BalanceSheet&lt;br&gt;&lt;br&gt;user -&amp;gt; expense&lt;br&gt;expense -&amp;gt; split&lt;br&gt;group -&amp;gt; expense&lt;br&gt;group -&amp;gt; user&lt;br&gt;group -&amp;gt; balancesheet&lt;br&gt;user-&amp;gt; balancesheet&lt;br&gt;expense manager -&amp;gt; expense&lt;br&gt;expense maanger -&amp;gt; splitstrategy&lt;br&gt;user -&amp;gt; payment&lt;br&gt;expense manager -&amp;gt; notification&lt;br&gt;&lt;br&gt;Design patterns :&lt;br&gt;1. Strategy pattern for Dividing the expense and for notifications&lt;br&gt;2. Singleton for expense manager&lt;br&gt;3. Repositiory pattern for user, group and expense&lt;br&gt;4. Observer pattern for expense&lt;br&gt;&lt;br&gt;Class Diagram :&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry y="160" width="840" height="670" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" style="edgeStyle=none;html=1;" parent="1" source="5" target="9" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" style="edgeStyle=none;html=1;" parent="1" source="5" target="16" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" style="edgeStyle=none;html=1;" parent="1" source="5" target="28" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" style="edgeStyle=none;html=1;" parent="1" source="5" target="31" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="" style="edgeStyle=none;html=1;" parent="1" source="5" target="37" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="" style="edgeStyle=none;html=1;" parent="1" source="5" target="41" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Expense manager" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="1160" width="160" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="+ addExpense() : void&#10;+addUser() : void&#10;+ addGroup() :void&#10;+ splitTheExpense() :void" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="5" vertex="1">
+                    <mxGeometry y="30" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" style="edgeStyle=none;html=1;" parent="1" source="7" target="21" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="User" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="930" width="160" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="+ userId: String&#10;+ name : String&#10;+ email :String&#10;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="7" vertex="1">
+                    <mxGeometry y="30" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" style="edgeStyle=none;html=1;" parent="1" source="9" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="UserRepository" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="550" y="930" width="160" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="+ List&lt;User&gt; users&#10;+ getAllusers() : List&lt;User&gt;&#10;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="9" vertex="1">
+                    <mxGeometry y="30" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" style="edgeStyle=none;html=1;" parent="1" source="13" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=none;html=1;" parent="1" source="13" target="21" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Group" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="1160" width="160" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="+ groupId: String&#10;+ name :String&#10;+ description : String&#10;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="13" vertex="1">
+                    <mxGeometry y="30" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=none;html=1;" parent="1" source="16" target="13" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="GroupRepository" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="550" y="1160" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="+ List&lt;Group&gt; groups&#10;+ listAllgroups() : List&lt;Group&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="16" vertex="1">
+                    <mxGeometry y="30" width="170" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" style="edgeStyle=none;html=1;" parent="1" source="21" target="28" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" style="edgeStyle=none;html=1;" edge="1" parent="1" source="21" target="44">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Expense" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="1350" width="160" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="+ expenseId: String&#10;+ totalAmount: BigDecimal&#10;+ group : Group&#10;+ user : User&#10;+splitType : SplitType&#10;+ List&lt;Split&gt; paidBy &#10;+ List&lt;Split&gt; splitAmong&#10;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="21" vertex="1">
+                    <mxGeometry y="30" width="160" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Split" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="550" y="1360" width="160" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="+ user : User&#10;+ amount :BigDecimal&#10;+ expense : Expense" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="28" vertex="1">
+                    <mxGeometry y="30" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="BalanceSheet" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="1140" y="1160" width="360" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="+ Map&lt;User, Map&lt;User, BigDecimal&gt;&gt; balance;&#10;+ showAllExpense( User user, Group groupt) : BigDecimal&#10;+ showowed(User user) : BigDecimal&#10;+ showToPay(User user) : BigDecimal" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="31" vertex="1">
+                    <mxGeometry y="30" width="360" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="37" target="47">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="&lt;&lt;Interface&gt;&gt;&#10;SplitStrategy" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="855" y="1360" width="190" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="+ boolean validate(BigDecimal&#10; totalAmount, List&lt;Split&gt; splits);&#10;+ calculateSplits(BigDecimal &#10;totalAmount, List&lt;User&gt;&#10; participants);" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="37" vertex="1">
+                    <mxGeometry y="40" width="190" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="Notifications" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="840" y="930" width="220" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="+ notifyUser(User usr, Expense exp, &#10;String description) : void" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="41" vertex="1">
+                    <mxGeometry y="30" width="220" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="&lt;&lt;enum&gt;&gt;&#10;SplitType" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="1490" width="160" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="EXACT&#10;PERCENTAGE&#10;EQUAL" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="44" vertex="1">
+                    <mxGeometry y="40" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="Percentage" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="870" y="1560" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="calculateSplits(BigDecimal &#10;totalAmount, List&lt;User&gt;&#10; participants);" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="47">
+                    <mxGeometry y="40" width="170" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="exact" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="1100" y="1560" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="calculateSplits(BigDecimal &#10;totalAmount, List&lt;User&gt;&#10; participants);" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="50">
+                    <mxGeometry y="40" width="170" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="equal" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="620" y="1560" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="calculateSplits(BigDecimal &#10;totalAmount, List&lt;User&gt;&#10; participants);" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="52">
+                    <mxGeometry y="40" width="170" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" style="edgeStyle=none;html=1;" edge="1" parent="1" source="38" target="52">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" style="edgeStyle=none;html=1;" edge="1" parent="1" source="38" target="50">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
